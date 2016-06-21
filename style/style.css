@@ -71,7 +71,7 @@ Header
 -------------------------------------*/
 
 #uvod {
-  background-image: url("/images/hero.jpg");
+  background-image: url("images/hero.jpg");
   background-size: cover;
   height: 100vh;
   overflow: auto;
@@ -224,7 +224,7 @@ Kontakt
 }
 
 .exterier {
-  background-image: url("/images/exterier.jpg");
+  background-image: url("images/exterier.jpg");
   background-size: cover;
   margin-left: 40%;
   width: 60%;

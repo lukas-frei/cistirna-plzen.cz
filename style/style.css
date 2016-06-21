@@ -1,0 +1,465 @@
+/*-------------------------------------
+Setup
+-------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix{zoom: 1}
+.clearfix:after {
+    content:'.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ------------ fonts ------------- */
+
+body {
+  font-family: 'Helvetica Neue';
+  font-size: 18px;
+  line-height: 1.8em;
+  letter-spacing: 1px;
+}
+
+h1, h2, h3 {
+  font-family: georgia;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 350%;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 200%;
+  padding: 70px 0px 20px 0px;
+  line-height: 1.4em;
+}
+
+h3 {
+  font-size: 150%;
+  padding: 40px 0 10px 0;
+}
+
+/* ------------ buttons ------------- */
+
+.btn-full:link,
+.btn-full:visited {
+  display: block;
+  width: 200px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(96, 107, 70);
+}
+
+.btn-full:hover,
+.btn-full:active {
+  background-color: rgb(106, 128, 37);
+  transition: background-color 0.3s ease;
+}
+
+/*-------------------------------------
+Header
+-------------------------------------*/
+
+#uvod {
+  background-image: url("/images/hero.jpg");
+  background-size: cover;
+  height: 100vh;
+  overflow: auto;
+}
+
+.title {
+  background-color: rgba(42, 30, 34, 0.8);
+  color: white;
+  text-align: center;
+  width: 400px;
+  height: 250px;
+  margin: 80px auto 0px auto;
+}
+
+.title h1 {
+  padding: 40px;
+  line-height: 80%;
+  letter-spacing: 3px;
+}
+
+.title h1 span {
+  font-size: 50%;
+  font-weight: normal;
+  line-height: 220%;
+}
+
+/*-------------------------------------
+Nav
+-------------------------------------*/
+
+.nav-main ul {
+  position: absolute;
+  bottom: 0px;
+  text-align:center;
+  width: 100%;
+}
+
+.nav-main li {
+    display: inline-block;
+    font-size: 140%;
+    margin: 0 -3px;
+    background-color: rgba(42, 30, 34, 0.8);
+}
+
+.nav-main a {
+  display: inline-block;
+  padding: 30px 60px;
+}
+
+.nav-main li a:link,
+.nav-main li a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-main li:hover,
+.nav-main li:active {
+  background-color: rgba(96, 107, 70, 0.8);
+  transition: background-color 0.3s ease;
+}
+
+/*-------------------------------------
+Servis
+-------------------------------------*/
+
+.intro {
+  width: 60%;
+  display: block;
+  float: left;
+  padding-left: 10%;
+}
+
+.intro p {
+  max-width: 500px;
+  padding-right: 50px;
+  letter-spacing: 0px;
+}
+
+.intro ul {
+  margin-top: 30px;
+  list-style: none;
+  letter-spacing: 0px;
+}
+
+.intro li {
+  line-height: 3em;
+}
+
+.intro img {
+  padding-right: 20px;
+  height: 2em;
+  vertical-align: middle;
+}
+
+.intro span {
+  color: rgb(106, 128, 37);
+  font-weight: bold;
+}
+
+.cenik-small {
+    background-color: rgb(42, 30, 34);
+    width: 40%;
+    height: auto;
+    display: block;
+    float: left;
+    text-align: center;
+    color: white;
+    padding-bottom: 40px;
+}
+
+.cenik-small table {
+  margin: auto;
+}
+
+.cenik-small td {
+  text-align: left;
+  padding: 8px 60px;
+  min-width: 200px;
+}
+
+/*-------------------------------------
+Kontakt
+-------------------------------------*/
+
+#kontakt hr {
+  border: solid 3px;
+  color: rgb(42, 30, 34);
+}
+
+.kontakt1 {
+  background-color: rgb(42, 30, 34);
+}
+
+.open {
+  color: white;
+  width: 40%;
+  float: left;
+  text-align: center;
+  padding: 0px 40px 40px 0px;
+  text-align: right;
+}
+
+.open p {
+  padding: 20px 0;
+}
+
+.open span {
+  color: rgb(106, 128, 37);
+  font-weight: bold;
+}
+
+.exterier {
+  background-image: url("/images/exterier.jpg");
+  background-size: cover;
+  margin-left: 40%;
+  width: 60%;
+  height: 608px;
+}
+
+/* ------------ Map ------------- */
+
+.kontakt2 {
+  position: relative;
+  margin-bottom: -20px;
+  overflow: hidden;
+}
+
+.map {
+  width: 100%;
+}
+
+.info-box {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  max-width: 400px;
+  text-align: center;
+  background-color: rgba(42, 30, 34, 1);
+  color: white;
+}
+
+.info-box h2 {
+  padding: 30px 50px;
+}
+
+.info-box p {
+  padding: 20px 20px;
+}
+
+.adresa {
+  font-size: 130%;
+}
+
+.info-box span {
+  color: rgb(106, 128, 37);
+  font-weight: bold;
+}
+
+/*-------------------------------------
+Footer
+-------------------------------------*/
+
+footer {
+  background-color: rgba(42, 30, 34, 1);
+  color: white;
+  overflow: hidden;
+}
+
+.nav-sec {
+  display: block;
+  text-align: center;
+  padding: 80px;
+  font-size: 140%;
+  letter-spacing: 2px;
+}
+
+.nav-sec li {
+  display: inline-block;
+  padding: 20px;
+}
+
+.nav-sec a:link,
+.nav-sec a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-sec a:hover,
+.nav-sec a:active {
+  color: rgb(106, 128, 37);
+  transition: color 0.3s ease;
+}
+
+.firma {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.firma p {
+  padding-bottom: 30px;
+}
+
+.firma a:link,
+.firma a:visited{
+  color: white;
+  text-decoration: none;
+}
+
+/*-------------------------------------
+Cenik
+-------------------------------------*/
+
+#cenik {
+  background-image: url("/images/interier.jpg");
+  background-size: cover;
+  height: 75vh;
+  overflow: auto;
+}
+
+/* ------------ Nav ------------- */
+
+.nav-fixed {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(42, 30, 34, 0.8);
+  color: white;
+}
+
+.nav-fixed li {
+  display: inline-block;
+  font-size: 140%;
+  margin: -2px -3px 0px -3px;
+}
+
+.nav-fixed li:first-child {
+  overflow:  hidden;
+  padding-right: 80px;
+  font-family: georgia;
+  font-weight: bold;
+  font-size: 200%;
+  margin-bottom: -25px;
+  padding-top: 5px;
+}
+
+.nav-fixed li span {
+  font-size: 60%;
+  font-weight: normal;
+}
+
+.nav-fixed a {
+  display: inline-block;
+  padding: 40px 60px 30px 60px;
+}
+
+.nav-fixed li a:link,
+.nav-fixed li a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-fixed li:hover,
+.nav-fixed li:active {
+  background-color: rgba(96, 107, 70, 0.8);
+  transition: background-color 0.3s ease;
+}
+
+.nav-fixed li:first-child:hover,
+.nav-fixed li:first-child:active {
+  background-color: rgba(96, 107, 70, 0);
+}
+
+.active {
+  background-color: rgba(96, 107, 70, 0.8);
+}
+
+/* ------------ cenik box ------------- */
+
+.cenik-box {
+  background-color: rgba(42, 30, 34, 0.8);
+  color: white;
+  margin: 200px auto 0px auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+.cenik-box span {
+  color: rgb(106, 128, 37);
+  font-weight: bold;
+}
+
+.cenik-box p {
+  padding: 30px 20px 10px;
+}
+
+.cenik-box p:first-child {
+  font-size: 120%;
+}
+
+.cenik-box p:last-child {
+  font-style: italic;
+  padding: 20px;
+}
+
+/* ------------ cenik vypis ------------- */
+
+#cenik-vypis {
+  width: 800px;
+  margin: auto;
+}
+
+#cenik-vypis table {
+  min-width: 360px;
+}
+
+#cenik-vypis td {
+  height: 1.5em;
+}
+
+#cenik-vypis td:last-child {
+  width: 70px;
+}
+
+.prvni {
+  display: block;
+  float: left;
+  width: 45%;
+}
+
+.druhy {
+  display: block;
+  float: right;
+  width: 45%;
+}
+
+/* ------------ footer ------------- */
+
+#reklamace {
+  padding: 140px 120px;
+  margin: -60px auto;
+  letter-spacing: 0px;
+}
+
+#reklamace p {
+  padding-bottom: 20px;
+}
+
+#reklamace ul {
+  padding-left: 20px;
+  line-height: 2em;
+}

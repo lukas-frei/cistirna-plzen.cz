@@ -1,0 +1,44 @@
+/*-------------------------------------
+Tablet
+-------------------------------------*/
+
+@media (max-width: 979px) {
+  /* ------------ servis ------------- */
+  .cenik-small {
+    display: none;
+  }
+
+  #servis {
+    padding-bottom: 40px;
+  }
+
+  .intro {
+    width: 580px;
+    float: none;
+    margin: auto;
+    padding: 0 40px;
+  }
+
+  /* ------------ kontakt ------------- */
+
+  .exterier {
+    display: none;
+  }
+
+  .open {
+    width: 580px;
+    float: none;
+    margin: auto;
+    padding: 0 40px 40px 40px;
+    text-align: left;
+  }
+}
+
+/*-------------------------------------
+Mobile
+-------------------------------------*/
+
+@media (max-width: 979px) {
+  .kontakt2 {
+  }
+}

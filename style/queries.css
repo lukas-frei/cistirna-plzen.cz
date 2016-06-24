@@ -208,12 +208,12 @@ Mobile
     width: 100%
   }
   .cenik-box p {
-    padding: 20px;
+    padding: 10px 10px 0 10px;
   }
 
   #cenik-vypis {
-    width: 100%;
-    margin: 2%;
+    width: 90%;
+    margin: 5%;
   }
   #cenik-vypis table {
     font-size: 80%;

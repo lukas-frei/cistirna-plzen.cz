@@ -4,6 +4,7 @@ Tablet
 
 @media (max-width: 979px) {
   /* ------------ servis ------------- */
+
   .cenik-small {
     display: none;
   }
@@ -32,13 +33,207 @@ Tablet
     padding: 0 40px 40px 40px;
     text-align: left;
   }
+
+  /* ------------ kontakt2 ------------- */
+
+  .crop {
+    float: left;
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .map {
+    width: inherit;
+    display: block;
+    margin: 0 -100px 0 -200px;
+  }
+
+  .adresa {
+    width: 580px;
+    position: static;
+    display: block;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .nav-fixed a {
+    display: inline-block;
+    padding: 40px 30px 30px 30px;
+  }
+
+  #cenik-vypis {
+    max-width: 400px;
+  }
+  .prvni {
+    width: 100%;
+  }
+  .druhy {
+    width: 100%;
+  }
+
+  #reklamace {
+    max-width: 400px;
+  }
+}
+
+/* ------------ nav-fixed fix ------------- */
+@media (max-width: 700px) {
+  .nav-fixed li {
+    width: 100%;
+  }
+  .nav-fixed li a {
+    width: 100%;
+    padding: 20px 60px 20px 60px;
+  }
+  .nav-fixed li:first-child {
+    width: 100%;
+    margin: 30px 0px;
+    padding: 5px;
+  }
+  #cenik {
+    background:
+      linear-gradient(
+        rgba(42, 30, 34, 0.7),
+        rgba(42, 30, 34, 0.7)
+      ),
+      url("../images/interier.jpg");
+      background-size: cover;
+  }
+  .nav-fixed {
+    background-color: rgba(42, 30, 34, 0);
+    position: static;
+  }
+  .cenik-box {
+    background-color: rgba(42, 30, 34, 0);
+    margin-top: 0px;
+  }
+  .cenik-box p:last-child {
+    display: none;
+  }
 }
 
 /*-------------------------------------
 Mobile
 -------------------------------------*/
 
-@media (max-width: 979px) {
-  .kontakt2 {
+@media (max-width: 420px) {
+
+  h2 {
+    padding: 40px 0 20px;
+    font-size: 180%;
   }
+
+  #uvod {
+    background:
+      linear-gradient(
+        rgba(42, 30, 34, 0.7),
+        rgba(42, 30, 34, 0.7)
+      ),
+      url("../images/hero.jpg");
+      background-size: cover;
+  }
+  .title {
+    background-color: rgba(42, 30, 34, 0);
+  }
+  .nav-main li {
+    background-color: rgba(42, 30, 34, 0);
+  }
+  .title {
+    margin: -42px 0;
+  }
+  .title h1 {
+    padding: 40px 10px;
+  }
+  .nav-main li {
+    width: 100%;
+  }
+
+  .intro {
+    width: 100%;
+    padding: 0 3%;
+  }
+  .intro p {
+    width: 100%;
+    padding: 0;
+  }
+  .intro ul {
+    padding: 10px 0 30px 0;
+  }
+  .intro li {
+    text-align: center;
+    padding: 0 2%;
+    line-height: 1.6em;
+  }
+  .intro img {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .open {
+    width: 100%;
+    padding: 0 3% 3% 3%;
+  }
+
+  .adresa {
+    width: 100%;
+    position: static;
+  }
+  .adresa h2 {
+    padding: 30px 3% 10px 3%;
+  }
+  .adresa p {
+      padding: 30px 3%;
+  }
+  .crop {
+    display: none;
+  }
+
+  .nav-sec li {
+    width: 100%;
+    padding: 15px 0;
+  }
+  .firma p {
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 90%;
+  }
+
+  .nav-fixed {
+    position: relative;
+  }
+  .nav-fixed li {
+    display: block;
+    width: 100%
+  }
+  .cenik-box p {
+    padding: 20px;
+  }
+
+  #cenik-vypis {
+    width: 100%;
+    margin: 2%;
+  }
+  #cenik-vypis table {
+    font-size: 80%;
+    min-width: 300px;
+  }
+  .prvni {
+    width: 100%;
+    float: none;
+  }
+  .druhy {
+    width: 100%;
+    float: none;
+  }
+
+  #reklamace {
+    width: 100%;
+    font-size: 90%;
+    max-width: 300px;
+    padding: 20px 0 40px 0;
+    margin: 0px auto;
+  }
+
 }

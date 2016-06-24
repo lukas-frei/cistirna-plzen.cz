@@ -81,7 +81,8 @@ Header
   background-color: rgba(42, 30, 34, 0.8);
   color: white;
   text-align: center;
-  width: 400px;
+  max-width: 420px;
+  width: 100%;
   height: 250px;
   margin: 80px auto 0px auto;
 }
@@ -164,6 +165,7 @@ Servis
   padding-right: 20px;
   height: 2em;
   vertical-align: middle;
+  line-height: 3em;
 }
 
 .intro span {
@@ -177,21 +179,26 @@ Servis
     height: auto;
     display: block;
     float: left;
-    text-align: center;
+    text-align: left;
     color: white;
     padding-bottom: 40px;
+    padding-left: 50px;
 }
 
 .cenik-small table {
-  margin: auto;
+  text-align: left;
 }
 
 .cenik-small td {
   text-align: left;
-  padding: 8px 60px;
+  padding: 8px 0px;
   min-width: 200px;
 }
 
+.btn-cenik {
+  float: left;
+  text-align: center;
+}
 /*-------------------------------------
 Kontakt
 -------------------------------------*/
@@ -243,29 +250,30 @@ Kontakt
   width: 100%;
 }
 
-.info-box {
-  position: absolute;
-  right: 30px;
-  top: 30px;
-  max-width: 400px;
-  text-align: center;
-  background-color: rgba(42, 30, 34, 1);
-  color: white;
-}
-
-.info-box h2 {
-  padding: 30px 50px;
-}
-
-.info-box p {
-  padding: 20px 20px;
-}
-
 .adresa {
+  height: 98%;
+  position: absolute;
+  right: 0px;
+  text-align: left;
+  background-color: white;
+  color: rgb(42, 30, 34);
+}
+
+.adresa h2 {
+  padding: 60px 50px 10px 40px;
+  text-align: left;
+}
+
+.adresa p {
+  padding: 20px 40px 60px;
+  letter-spacing: 0px;
+}
+
+.adresa2 {
   font-size: 130%;
 }
 
-.info-box span {
+.adresa span {
   color: rgb(106, 128, 37);
   font-weight: bold;
 }
@@ -419,7 +427,7 @@ Cenik
 /* ------------ cenik vypis ------------- */
 
 #cenik-vypis {
-  width: 800px;
+  max-width: 800px;
   margin: auto;
 }
 
@@ -450,7 +458,8 @@ Cenik
 /* ------------ footer ------------- */
 
 #reklamace {
-  padding: 140px 120px;
+  max-width: 800px;
+  padding: 140px 0px;
   margin: -60px auto;
   letter-spacing: 0px;
 }

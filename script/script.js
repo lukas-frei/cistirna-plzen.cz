@@ -18,7 +18,7 @@ $(document).ready(function(){
   var bg = jQuery("#uvod, #cenik");
   jQuery(window).resize("resizeBackground");
   function resizeBackground() {
-      bg.height(jQuery(window).height());
+      bg.height(jQuery(window).height() + 60);
   }
   resizeBackground();
 

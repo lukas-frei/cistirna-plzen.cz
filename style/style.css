@@ -72,7 +72,7 @@ Header
 
 #uvod {
   background-image: url("../images/hero.jpg");
-  background-size: cover;
+  background-size: cover !important;
   height: 100vh;
   overflow: auto;
 }
@@ -232,7 +232,7 @@ Kontakt
 
 .exterier {
   background-image: url("../images/exterier.jpg");
-  background-size: cover;
+  background-size: cover !important;
   margin-left: 40%;
   width: 60%;
   height: 608px;

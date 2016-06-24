@@ -83,12 +83,15 @@ Tablet
   }
   .nav-fixed li a {
     width: 100%;
-    padding: 20px 60px 20px 60px;
+    padding: 15px 60px 15px 60px;
   }
   .nav-fixed li:first-child {
     width: 100%;
-    margin: 30px 0px;
+    margin: 30px 0px 20px 0px;
     padding: 5px;
+  }
+  .cenik-box p {
+    padding: 20px;
   }
   #cenik {
     background:
@@ -206,9 +209,6 @@ Mobile
   .nav-fixed li {
     display: block;
     width: 100%
-  }
-  .cenik-box p {
-    padding: 10px 10px 0 10px;
   }
 
   #cenik-vypis {

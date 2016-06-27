@@ -427,16 +427,8 @@ Cenik
 }
 
 .cenik-box p {
-  padding: 30px 20px 10px;
-}
-
-.cenik-box p:first-child {
+  padding: 50px;
   font-size: 120%;
-}
-
-.cenik-box p:last-child {
-  font-style: italic;
-  padding: 20px;
 }
 
 /* ------------ cenik vypis ------------- */

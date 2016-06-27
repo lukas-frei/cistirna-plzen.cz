@@ -17,6 +17,11 @@ Setup
     visibility: hidden;
 }
 
+body {
+  max-width: 1280px;
+  margin: auto;
+}
+
 /* ------------ fonts ------------- */
 
 body {
@@ -73,6 +78,7 @@ Header
 #uvod {
   background-image: url("../images/hero.jpg");
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
   overflow: auto;
 }
@@ -137,6 +143,10 @@ Nav
 /*-------------------------------------
 Servis
 -------------------------------------*/
+
+#servis {
+  overflow: hidden;
+}
 
 .intro {
   width: 60%;
@@ -203,6 +213,10 @@ Servis
 Kontakt
 -------------------------------------*/
 
+#kontakt {
+  overflow: hidden;
+}
+
 #kontakt hr {
   border: solid 3px;
   color: rgb(42, 30, 34);
@@ -260,7 +274,7 @@ Kontakt
 }
 
 .adresa h2 {
-  padding: 60px 50px 10px 40px;
+  padding: 70px 50px 10px 40px;
   text-align: left;
 }
 
@@ -335,8 +349,9 @@ Cenik
 #cenik {
   background-image: url("../images/interier.jpg");
   background-size: cover;
+  background-attachment: fixed;
   height: 75vh;
-  overflow: auto;
+  overflow: hidden;
 }
 
 /* ------------ Nav ------------- */

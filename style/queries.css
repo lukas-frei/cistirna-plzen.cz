@@ -3,14 +3,14 @@ Tablet
 -------------------------------------*/
 
 @media (max-width: 979px) {
-  /* ------------ servis ------------- */
 
+  /* ------------ servis ------------- */
   .cenik-small {
     display: none;
   }
 
   #servis {
-    padding-bottom: 40px;
+    padding-bottom: 50px;
   }
 
   .intro {
@@ -21,6 +21,9 @@ Tablet
   }
 
   /* ------------ kontakt ------------- */
+  #kontakt hr {
+    display: none;
+  }
 
   .exterier {
     display: none;
@@ -33,11 +36,9 @@ Tablet
     padding: 0 40px 40px 40px;
     text-align: left;
   }
-
   /* ------------ kontakt2 ------------- */
 
   .crop {
-    float: left;
     height: 500px;
     overflow: hidden;
   }
@@ -53,9 +54,9 @@ Tablet
     position: static;
     display: block;
     margin: 0 auto;
-    float: none;
   }
 
+  /* ------------ cenik ------------- */
   .nav-fixed a {
     display: inline-block;
     padding: 40px 30px 30px 30px;
@@ -76,13 +77,27 @@ Tablet
   }
 }
 
-/* ------------ nav-fixed fix ------------- */
+
+/*-------------------------------------
+tablet to mobile fix
+-------------------------------------*/
 @media (max-width: 700px) {
+  .nav-main li {
+      width: 33%;
+      background-color: rgba(42, 30, 34, 0.8);
+      margin: 0 -3px;
+  }
+
+  .nav-main a {
+      padding: 30px 0px;
+  }
+
+/* ------------ nav-fix colapse ------------- */
   .nav-fixed li {
     width: 100%;
   }
   .nav-fixed li a {
-    width: 100%;
+    width: inherit;
     padding: 15px 60px 15px 60px;
   }
   .nav-fixed li:first-child {
@@ -115,17 +130,43 @@ Tablet
   }
 }
 
+/* ------------ content visibility ------------- */
+@media (max-width: 500px) {
+  h2 {
+    padding: 40px 0 20px;
+    font-size: 180%;
+  }
+  .intro {
+    width: 100%;
+    padding: 0 0 0 10px;
+  }
+  .open {
+    width: 100%;
+    padding: 0 0 20px 10px;
+  }
+  .adresa {
+    width: 100%;
+    padding-bottom: 60px;
+  }
+  .adresa h2,
+  .adresa p {
+    padding: 40px 0 0 10px;
+  }
+  .nav-sec li {
+    width: 100%;
+  }
+  .crop {
+    display: none;
+  }
+}
+
 /*-------------------------------------
 Mobile
 -------------------------------------*/
 
 @media (max-width: 420px) {
 
-  h2 {
-    padding: 40px 0 20px;
-    font-size: 180%;
-  }
-
+  /* ------------ uvod colapse ------------- */
   #uvod {
     background:
       linear-gradient(
@@ -134,6 +175,8 @@ Mobile
       ),
       url("../images/hero.jpg");
       background-size: cover;
+      background-position: -90px;
+      background-attachment: fixed;
   }
   .title {
     background-color: rgba(42, 30, 34, 0);
@@ -151,6 +194,7 @@ Mobile
     width: 100%;
   }
 
+  /* ------------ service ------------- */
   .intro {
     width: 100%;
     padding: 0 3%;
@@ -175,11 +219,11 @@ Mobile
     padding: 0px;
   }
 
+  /* ------------ kontakt ------------- */
   .open {
     width: 100%;
     padding: 0 3% 3% 3%;
   }
-
   .adresa {
     width: 100%;
     position: static;
@@ -190,10 +234,8 @@ Mobile
   .adresa p {
       padding: 30px 3%;
   }
-  .crop {
-    display: none;
-  }
 
+  /* ------------ footer ------------- */
   .nav-sec li {
     width: 100%;
     padding: 15px 0;
@@ -204,6 +246,7 @@ Mobile
     font-size: 90%;
   }
 
+  /* ------------ cenik ------------- */
   .nav-fixed {
     position: relative;
   }
